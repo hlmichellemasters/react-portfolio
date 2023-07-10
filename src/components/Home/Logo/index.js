@@ -1,6 +1,4 @@
 import './index.scss';
-import LogoM from '../../../assets/images/michelle-M.png';
-import LogoS from '../../../assets/images/logo-s.png';
 
 const Logo = () => {
   return (
