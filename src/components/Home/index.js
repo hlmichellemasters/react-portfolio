@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import LogoTitle from '../../assets/images/michelle-M.png';
+import LogoM from '../../assets/images/michelle-M.png';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo';
 import './index.scss';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const nameArray = ['i', 'c', 'h', 'e', 'l', 'l', 'e'];
+  const firstNameArray = ['i', 'c', 'h', 'e', 'l', 'l', 'e'];
+  const lastNameArray = ['a', 's', 't', 'e', 'r', 's'];
   const jobArray = [
     's',
     'o',
@@ -46,17 +48,23 @@ const Home = () => {
           <br />
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _14`}>'m</span>
-          <img src={LogoTitle} alt="developer" />
+          <img src={LogoM} alt="M" />
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={nameArray}
+            strArray={firstNameArray}
             index={15}
+          />
+          <img src={LogoM} alt="M" />
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={lastNameArray}
+            index={25}
           />
           <br />
           <AnimatedLetters
             letterClass={letterClass}
             strArray={jobArray}
-            index={25}
+            index={35}
           />
         </h1>
         <h2>
@@ -67,6 +75,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };

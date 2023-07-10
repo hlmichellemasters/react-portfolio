@@ -1,0 +1,15 @@
+.logo-container {
+  z-index: 0;
+  width: 400px;
+  height: 609px;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+
+  svg {
+    width: 100%;
+    animation: fadeIn 5s 1s;
+    height: auto;
+    bottom: 0;
+  }
+}
