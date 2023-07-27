@@ -47,10 +47,10 @@ const About = () => {
           <p>
             I have a Bachelors of Science in Computer Science from Western
             Governors University. I was most recently a remote, full-stack
-            (mostly front-end) associate software developer for a small
-            consulting company based outside of Austin, TX. While there I
-            managed my time between up to 3 different clients and also furthered
-            my education in machine-learning and data science.
+            associate software developer for a small consulting company based
+            outside of Austin, TX. While there I managed my time between up to 3
+            different clients and also furthered my education in
+            machine-learning and data science.
           </p>
           <p>
             I also have a Bachelors of Science in Biology from the University of
