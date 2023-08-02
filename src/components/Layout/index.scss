@@ -7,6 +7,10 @@
 .top-tags {
   bottom: auto;
   top: 35px;
+
+  @media screen and (max-width: 768px) {
+    top: 15px;
+  }
 }
 
 .tags {
@@ -14,7 +18,7 @@
   opacity: 0.6;
   position: absolute;
   bottom: 0;
-  left: 15%;
+  left: 30px;
   font-size: 18px;
   font-family: 'La Belle Aurore', sans-serif;
 }

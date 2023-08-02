@@ -9,14 +9,11 @@
 
     @media screen and (max-width: 768px) {
       width: 100%;
-      left: 0;
+      left: 50px;
       top: 0;
       transform: none;
       padding: 20px;
     }
-
-    // @media screen and (min-width: 1025px) {
-    // }
   }
 
   h1 {
@@ -25,6 +22,11 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+      white-space: nowrap;
+    }
 
     @media (min-width: 790px) and (max-width: 940px) {
       white-space: nowrap;
@@ -39,6 +41,10 @@
       margin-top: -40px;
       left: 10px;
       opacity: 0.6;
+
+      @media screen and (max-width: 768px) {
+        margin-top: -20px;
+      }
     }
 
     &::after {
@@ -70,6 +76,12 @@ h2 {
   font-family: sans-serif;
   letter-spacing: 3px;
   animation: fadeIn 1s 1.4s backwards;
+  word-break: break-word;
+  word-wrap: break-word;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .flat-button {
@@ -89,5 +101,11 @@ h2 {
   &:hover {
     background: #ffd700;
     color: #333;
+  }
+}
+
+.logo-container {
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

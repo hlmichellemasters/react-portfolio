@@ -69,16 +69,13 @@ const Home = () => {
               index={35}
             />
           </h1>
-          <h2>
-            Frontend Developer / Python Developer / Machine-Learning Engineer /
-            Biologist
-          </h2>
+          <h2>Frontend / Full-stack Developer </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
       </div>
+      <Logo />
       <Loader type="pacman" />
     </>
   );
