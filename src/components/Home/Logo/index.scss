@@ -8,7 +8,8 @@
 
   svg {
     width: 100%;
-    animation: fadeIn 5s 1s;
+    animation: fadeIn 3s linear both;
+    animation-delay: 1s;
     height: auto;
     bottom: 0;
 
