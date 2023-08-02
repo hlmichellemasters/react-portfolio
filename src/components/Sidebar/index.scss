@@ -122,3 +122,44 @@
     }
   }
 }
+
+// mobile devices
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: #dfbf09;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: inline-block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed; /* Ensures the sidebar overlays the content */
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensures the sidebar appears on top of other content */
+  }
+
+  .sidebar.open {
+    .nav-bar {
+      display: inline-block;
+    }
+  }
+
+  .sidebar:not(.open) {
+    .nav-bar {
+      display: none;
+    }
+  }
+}
