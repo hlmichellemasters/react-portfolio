@@ -54,6 +54,10 @@
     display: table-cell;
     max-height: 90%;
 
+    @media screen and (max-width: 768px) {
+      left: 0;
+    }
+
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica';
@@ -63,6 +67,11 @@
       position: relative;
       margin-bottom: 40px;
       left: 100px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+        white-space: nowrap;
+      }
 
       &::before {
         content: '<h1>';
