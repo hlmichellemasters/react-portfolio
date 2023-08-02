@@ -51,25 +51,23 @@ const About = () => {
           <p>
             I am a full-stack software developer with a passion for learning and
             quality code. I thrive in fast-paced environments and enjoy working
-            with a team to solve problems and create solutions. I am always
-            looking for new opportunities to grow and expand my skillset, and am
-            currently seeking a full-time position.
+            with a team to solve problems, and am currently seeking a full-time
+            position!
           </p>
 
           <p>
-            I have a Bachelors of Science in Computer Science from Western
-            Governors University. I was most recently a remote, full-stack
-            associate software developer for a small consulting company based
-            outside of Austin, TX. While there I managed my time between up to 3
-            different clients and also furthered my education in
-            machine-learning and data science.
+            I have a BS in Computer Science from Western Governors University. I
+            was most recently a remote, full-stack software developer for a
+            consulting company based outside of Austin, TX. While there I
+            managed my time between multiple enterprise applications and also
+            trained in machine-learning and data science.
           </p>
           <p>
-            I also have a Bachelors of Science in Biology from the University of
-            Oregon. Previous work experiences and continued passions also
-            include molecular biology, microbiology, and healthcare. I am
-            excited to further bring my creativity and problem-solving skills to
-            the world of web and application development!
+            I also have a BS in Biology from the University of Oregon. Previous
+            work experiences and continued passions also include bioinformatics,
+            microbiology, and healthcare. I am excited to further bring my
+            creativity and problem-solving skills to the world of web and
+            application development!
           </p>
         </div>
 
