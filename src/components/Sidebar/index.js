@@ -10,12 +10,17 @@ import {
   faEnvelope,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
+import OutsideClickHandler from '../utilities/OutsideClickHandler';
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleOutsideClick = () => {
+    setIsSidebarOpen(false);
   };
 
   return (
@@ -27,54 +32,56 @@ const Sidebar = () => {
         <FontAwesomeIcon icon={faBars} />
       </div>
 
-      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-        <div className="nav-bar sidebar">
-          <Link className="logo" to="/">
-            <img src={mmLogo} alt="mastersLogo" />
-          </Link>
-          <nav>
-            <NavLink exact="true" to="/" activeClassName="active">
-              <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </NavLink>
-            <NavLink
-              exact="true"
-              to="/about"
-              activeClassName="active"
-              className="about-link"
-            >
-              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-            </NavLink>
-            <NavLink
-              exact="true"
-              to="/contact"
-              activeClassName="active"
-              className="contact-link"
-            >
-              <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-            </NavLink>
-          </nav>
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/hlmichellemasters/"
+      <OutsideClickHandler onOutsideClick={handleOutsideClick}>
+        <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+          <div className="nav-bar sidebar">
+            <Link className="logo" to="/">
+              <img src={mmLogo} alt="mastersLogo" />
+            </Link>
+            <nav>
+              <NavLink exact="true" to="/" activeClassName="active">
+                <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+              </NavLink>
+              <NavLink
+                exact="true"
+                to="/about"
+                activeClassName="active"
+                className="about-link"
               >
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/hlmichellemasters"
+                <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+              </NavLink>
+              <NavLink
+                exact="true"
+                to="/contact"
+                activeClassName="active"
+                className="contact-link"
               >
-                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-              </a>
-            </li>
-          </ul>
+                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+              </NavLink>
+            </nav>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/hlmichellemasters/"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/hlmichellemasters"
+                >
+                  <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </OutsideClickHandler>
     </>
   );
 };
