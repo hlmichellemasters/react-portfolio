@@ -134,14 +134,18 @@
   color: #dfbf09;
 }
 
+.mobile-nav {
+  width: 100%;
+}
+
+.desktop-nav {
+  width: 85px;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .hamburger-menu {
     display: inline-block;
-  }
-
-  .nav-bar {
-    display: none;
   }
 
   .sidebar {
@@ -154,12 +158,6 @@
   .sidebar.open {
     .nav-bar {
       display: inline-block;
-    }
-  }
-
-  .sidebar:not(.open) {
-    .nav-bar {
-      display: none;
     }
   }
 }

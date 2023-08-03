@@ -4,15 +4,6 @@
   position: absolute;
 }
 
-.top-tags {
-  bottom: auto;
-  top: 35px;
-
-  @media screen and (max-width: 768px) {
-    top: 15px;
-  }
-}
-
 .tags {
   color: #ffd700;
   opacity: 0.6;
@@ -21,6 +12,24 @@
   left: 30px;
   font-size: 18px;
   font-family: 'La Belle Aurore', sans-serif;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.top-tags {
+  position: fixed;
+  top: 100px;
+  left: 125px;
+}
+
+.bottom-tags {
+  position: fixed;
+  bottom: 100px;
+  left: 125px;
 }
 
 .bottom-tag-html {
@@ -42,6 +51,17 @@
   animation-delay: 1s;
 }
 
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+
+    @media screen and (max-width: 768px) {
+      left: 0;
+    }
+  }
+}
 .about-page,
 .contact-page {
   .text-zone {
