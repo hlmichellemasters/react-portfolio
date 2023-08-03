@@ -35,7 +35,7 @@ const Nav = ({ isMobile, isSidebarOpen, setIsSidebarOpen }) => {
                   activeClassName="active"
                   onClick={closeNavBar}
                 >
-                  <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                  <FontAwesomeIcon icon={faHome} color="#f0e394" />
                 </NavLink>
                 <NavLink
                   exact="true"
@@ -44,7 +44,7 @@ const Nav = ({ isMobile, isSidebarOpen, setIsSidebarOpen }) => {
                   className="about-link"
                   onClick={closeNavBar}
                 >
-                  <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                  <FontAwesomeIcon icon={faUser} color="#f0e394" />
                 </NavLink>
                 <NavLink
                   exact="true"
@@ -53,7 +53,7 @@ const Nav = ({ isMobile, isSidebarOpen, setIsSidebarOpen }) => {
                   className="contact-link"
                   onClick={closeNavBar}
                 >
-                  <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                  <FontAwesomeIcon icon={faEnvelope} color="#f0e394" />
                 </NavLink>
               </nav>
               <ul>
@@ -64,7 +64,7 @@ const Nav = ({ isMobile, isSidebarOpen, setIsSidebarOpen }) => {
                     href="https://www.linkedin.com/in/hlmichellemasters/"
                     onClick={closeNavBar}
                   >
-                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faLinkedin} color="#f0e394" />
                   </a>
                 </li>
                 <li>
@@ -74,7 +74,7 @@ const Nav = ({ isMobile, isSidebarOpen, setIsSidebarOpen }) => {
                     href="https://github.com/hlmichellemasters"
                     onClick={closeNavBar}
                   >
-                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faGithub} color="#f0e394" />
                   </a>
                 </li>
               </ul>

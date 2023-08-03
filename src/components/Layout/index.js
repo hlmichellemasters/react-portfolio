@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Sidebar from '../Sidebar';
 import './index.scss';
-import SlowConstellationBackground from 'slow-constellation-background';
 
 const Layout = () => {
   const [loaderComplete, setLoaderComplete] = useState(false);
@@ -24,7 +23,6 @@ const Layout = () => {
 
   return (
     <div className="App">
-      <SlowConstellationBackground />
       <Sidebar />
       <div className="page">
         {loaderComplete && <span className="tags top-tags">&lt;body&gt;</span>}

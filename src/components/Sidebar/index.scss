@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: rgba(15, 15, 15, 0.5);
   width: 85px;
   height: 100%;
   position: absolute;
@@ -14,7 +14,7 @@
     img {
       display: block;
       margin: 12px auto;
-      width: 80px;
+      width: 100px;
       height: auto;
 
       &.sub-logo {
@@ -136,6 +136,14 @@
 
 .mobile-nav {
   width: 100%;
+  background-image: url('../../assets/images/starry-night-sky.jpg');
+  max-height: 800px;
+  .logo img {
+    width: 150px;
+  }
+  a {
+    font-size: 30px !important;
+  }
 }
 
 .desktop-nav {
